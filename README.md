@@ -6,16 +6,18 @@ A Node.JS simple interface to Firebase Cloud Messaging (FCM) for Android and iOS
 
 Via [npm][1]:
 
-    $ npm install xxxxxxxxxxxxxxxxxxxxxx
+    $ npm install firebase-fcm-plugin
 
 ## Usage
 
-    var FCM = require('xxxxxxxxxxxxxxxxxxxxxxxxxxx');
+    var FCM = require('firebase-fcm-plugin');
 
-    const projectId = ''
-    const client_email = ''
-    const private_key = ''
-    const fcm = new FCM(projectId,client_email,private_key);
+    const fcmConfig = {
+        projectId : '',
+        client_email : '',
+        private_key : ''
+    };
+    const fcm = new FCM(fcmConfig);
 
     var message = {
         token: 'registration_token_or_topics_name_with_prefix', // required fill with device token or `/topics/${topicName}`
