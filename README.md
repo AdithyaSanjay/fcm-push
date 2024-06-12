@@ -1,4 +1,4 @@
-fcm-push
+firebase-fcm-plugin
 ========
 A Node.JS simple interface to Firebase Cloud Messaging (FCM) for Android and iOS
 
